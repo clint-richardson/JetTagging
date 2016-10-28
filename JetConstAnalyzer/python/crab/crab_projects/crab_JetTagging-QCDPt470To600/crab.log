@@ -1,0 +1,598 @@
+DEBUG 2016-10-27 16:05:26,121: 	 Executing command: 'submit'
+DEBUG 2016-10-27 16:05:26,121: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:05:26,128: 	 Checking credentials
+DEBUG 2016-10-27 16:05:26,128: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:05:26,128: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:05:26,230: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86292
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:26,332: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86292
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:26,332: 	 Proxy valid for 23:58:12 hours
+INFO 2016-10-27 16:05:26,332: 	 Will use CRAB configuration file crab_qcdPt470To600.py
+DEBUG 2016-10-27 16:05:26,333: 	 Loading CRAB configuration file.
+DEBUG 2016-10-27 16:05:27,767: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-10-27 16:05:27,877: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:27,877: 	 Checking credentials
+DEBUG 2016-10-27 16:05:27,877: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:05:27,877: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:05:27,979: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86291
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:28,082: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86290
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:28,082: 	 Proxy valid for 23:58:11 hours
+DEBUG 2016-10-27 16:05:28,184: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47334 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:29,087: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:05:29,192: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:29,192: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:05:29,192: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:05:29,996: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 670:03:50  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:29,997: 	 Myproxy is valid: 2412230
+DEBUG 2016-10-27 16:05:29,997: 	 Command use: submit
+DEBUG 2016-10-27 16:05:29,997: 	 Options use: ['-c', 'crab_qcdPt470To600.py']
+DEBUG 2016-10-27 16:05:30,987: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:05:30,987: 	 Instance is prod
+DEBUG 2016-10-27 16:05:30,987: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:05:30,987: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:05:30,987: 	 Started submission
+DEBUG 2016-10-27 16:05:30,987: 	 Working on /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600
+DEBUG 2016-10-27 16:05:32,281: 	 Loading required information from the environment
+DEBUG 2016-10-27 16:05:32,281: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14
+DEBUG 2016-10-27 16:05:32,308: 	 UNIQUE NAME: tarUUID 2f6cb579-6e41-40f8-99aa-098ab26524fc 
+DEBUG 2016-10-27 16:05:32,309: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'JetTagging-QCDPt470To600'
+config.section_('JobType')
+config.JobType.psetName = 'JetInfo_QCD_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1/MINIAODSIM'
+config.Data.unitsPerJob = 1
+config.Data.outLFNDirBase = '/store/user/clint/JetTagging/QCDJets/'
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2016-10-27 16:05:32,309: 	 self.config.JobType.psetName: JetInfo_QCD_cfg.py
+INFO 2016-10-27 16:05:32,309: 	 Importing CMSSW configuration JetInfo_QCD_cfg.py
+INFO 2016-10-27 16:05:32,473: 	 Finished importing CMSSW configuration JetInfo_QCD_cfg.py
+DEBUG 2016-10-27 16:05:32,473: 	 Writing CMSSW configuration to /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/inputs/PSet.py
+DEBUG 2016-10-27 16:05:32,492: 	 The following EDM output files will be collected: []
+DEBUG 2016-10-27 16:05:32,492: 	 The following TFile output files will be collected: ['JetInfo-QCD.root']
+DEBUG 2016-10-27 16:05:32,492: 	 The following user output files will be collected: []
+DEBUG 2016-10-27 16:05:32,492: 	 Loading required information from the environment
+DEBUG 2016-10-27 16:05:32,492: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14
+DEBUG 2016-10-27 16:05:32,492: 	 Making tarball in /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/inputs/2f6cb579-6e41-40f8-99aa-098ab26524fcdefault.tgz
+DEBUG 2016-10-27 16:05:32,540: 	 Checking directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/lib
+DEBUG 2016-10-27 16:05:32,541: 	 Adding directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/lib to tarball
+DEBUG 2016-10-27 16:05:32,621: 	 Checking directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/biglib
+DEBUG 2016-10-27 16:05:32,621: 	 Adding directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/biglib to tarball
+DEBUG 2016-10-27 16:05:32,623: 	 Checking directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/module
+DEBUG 2016-10-27 16:05:32,717: 	 Uploading archive /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/inputs/2f6cb579-6e41-40f8-99aa-098ab26524fcdefault.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-10-27 16:05:33,959: 	 Loading required information from the environment
+DEBUG 2016-10-27 16:05:33,960: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14
+DEBUG 2016-10-27 16:05:33,960: 	 Making tarball in /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/inputs/debugFiles.tgz
+DEBUG 2016-10-27 16:05:33,962: 	 Uploading archive /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-10-27 16:05:35,116: 	 Result uploading input files: cc66f9a95f138dbb65525472af30c6a5067d450646e97a2ffbd58d4eb489d8f1.tar.gz 
+WARNING 2016-10-27 16:05:35,116: 	 Warning: The following output files will not be published, as they are not EDM files: ['JetInfo-QCD.root']
+INFO 2016-10-27 16:05:35,116: 	 Sending the request to the server
+DEBUG 2016-10-27 16:05:35,116: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': 'cc66f9a95f138dbb65525472af30c6a5067d450646e97a2ffbd58d4eb489d8f1.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_8_0_14', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/RunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1/MINIAODSIM', 'lfn': '/store/user/clint/JetTagging/QCDJets/', 'dryrun': 0, 'workflow': 'crab_JetTagging-QCDPt470To600', 'adduserfiles': [], 'nonprodsw': 0, 'tfileoutfiles': ['JetInfo-QCD.root'], 'oneEventMode': 0, 'debugfilename': '6d94a29d72e4d4e0cf62e1fcf5d97b4ce286ac73cbfcf84ee219b3f57b6c3a86.tar.gz', 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': 0, 'splitalgo': 'FileBased', 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': ''} 
+DEBUG 2016-10-27 16:05:35,117: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=cc66f9a95f138dbb65525472af30c6a5067d450646e97a2ffbd58d4eb489d8f1.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_8_0_14&primarydataset=&inputdata=%2FQCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8%2FRunIISpring16MiniAODv2-PUSpring16_80X_mcRun2_asymptotic_2016_miniAODv2_v0_ext1-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Fclint%2FJetTagging%2FQCDJets%2F&dryrun=0&workflow=crab_JetTagging-QCDPt470To600&nonprodsw=0&oneEventMode=0&debugfilename=6d94a29d72e4d4e0cf62e1fcf5d97b4ce286ac73cbfcf84ee219b3f57b6c3a86.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc530&totalunits=0&splitalgo=FileBased&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=&tfileoutfiles=JetInfo-QCD.root
+DEBUG 2016-10-27 16:05:36,358: 	 Result: {'result': [{'RequestName': '161027_210535:clint_crab_JetTagging-QCDPt470To600'}]}
+INFO 2016-10-27 16:05:36,359: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2016-10-27 16:05:36,360: 	 Task name: 161027_210535:clint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:05:36,360: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2016-10-27 16:05:36,360: 	 About to return
+INFO 2016-10-27 16:05:36,364: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log
+DEBUG 2016-10-27 16:05:55,246: 	 Executing command: 'status'
+DEBUG 2016-10-27 16:05:55,246: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:05:55,251: 	 Checking credentials
+DEBUG 2016-10-27 16:05:55,251: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:05:55,251: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:05:55,353: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86263
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:55,455: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86263
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:55,455: 	 Proxy valid for 23:57:43 hours
+DEBUG 2016-10-27 16:05:55,564: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:55,564: 	 Checking credentials
+DEBUG 2016-10-27 16:05:55,564: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:05:55,564: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:05:55,666: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86263
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:55,768: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86263
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:55,768: 	 Proxy valid for 23:57:43 hours
+DEBUG 2016-10-27 16:05:56,647: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:05:56,754: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:56,754: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:05:56,754: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:05:57,458: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 670:03:22  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:05:57,459: 	 Myproxy is valid: 2412202
+DEBUG 2016-10-27 16:05:57,459: 	 Command use: status
+DEBUG 2016-10-27 16:05:57,459: 	 Options use: ['-d', 'crab_projects/crab_JetTagging-QCDPt470To600/']
+DEBUG 2016-10-27 16:05:58,332: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:05:58,332: 	 Instance is prod
+DEBUG 2016-10-27 16:05:58,332: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:05:58,332: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:05:58,332: 	 Looking up detailed status of task 161027_210535:clint_crab_JetTagging-QCDPt470To600
+DEBUG 2016-10-27 16:05:59,254: 	 {'status': 'QUEUED', 'username': 'clint', 'totalJobdefs': 0, 'jobsPerStatus': {}, 'taskWarningMsg': [], 'schedd': '', 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'command': 'SUBMIT', 'submissionTime': 1477602336, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': []}
+INFO 2016-10-27 16:05:59,254: 	 CRAB project directory:		/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:05:59,254: 	 Task name:			161027_210535:clint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:05:59,254: 	 Task status:			QUEUED on command SUBMIT
+INFO 2016-10-27 16:05:59,254: 	 
+No jobs created yet!
+INFO 2016-10-27 16:05:59,257: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log
+DEBUG 2016-10-27 16:06:34,755: 	 Executing command: 'kill'
+DEBUG 2016-10-27 16:06:34,755: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:06:34,762: 	 Checking credentials
+DEBUG 2016-10-27 16:06:34,762: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:06:34,762: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:06:34,864: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86224
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:34,967: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86224
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:34,967: 	 Proxy valid for 23:57:04 hours
+DEBUG 2016-10-27 16:06:35,079: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:35,079: 	 Checking credentials
+DEBUG 2016-10-27 16:06:35,079: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:06:35,079: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:06:35,182: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86223
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:35,286: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86223
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:35,286: 	 Proxy valid for 23:57:03 hours
+DEBUG 2016-10-27 16:06:36,198: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:06:36,303: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:36,303: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:06:36,303: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:06:37,407: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 670:02:42  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:06:37,408: 	 Myproxy is valid: 2412162
+DEBUG 2016-10-27 16:06:37,408: 	 Command use: kill
+DEBUG 2016-10-27 16:06:37,408: 	 Options use: ['-d', 'crab_projects/crab_JetTagging-QCDPt470To600/']
+DEBUG 2016-10-27 16:06:38,289: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:06:38,289: 	 Instance is prod
+DEBUG 2016-10-27 16:06:38,289: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:06:38,289: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:06:38,290: 	 Killing task 161027_210535:clint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:06:43,422: 	 The server answered with an error.
+INFO 2016-10-27 16:06:43,422: 	 Server answered with: Execution error
+INFO 2016-10-27 16:06:43,422: 	 Reason is: You cannot kill a task if it is in the QUEUED state
+INFO 2016-10-27 16:06:43,422: 	 Error Id: 65bb5ed3156e536e0e46732164ae4f5a
+DEBUG 2016-10-27 16:06:43,422: 	 ERROR: Internal Server Error (500):  '<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>500 Internal Server Error</title>
+    <style type="text/css">
+    #powered_by {
+        margin-top: 20px;
+        border-top: 2px solid black;
+        font-style: italic;
+    }
+
+    #traceback {
+        color: red;
+    }
+    </style>
+</head>
+    <body>
+        <h2>500 Internal Server Error</h2>
+        <p>Execution error</p>
+        <pre id="traceback"></pre>
+    <div id="powered_by">
+      <span>
+        Powered by <a href="http://www.cherrypy.org">CherryPy unknown</a>
+      </span>
+    </div>
+    </body>
+</html>
+'
+DEBUG 2016-10-27 16:06:43,422: 	 Command failed with URI: https://cmsweb.cern.ch/crabserver/prod/workflow
+DEBUG 2016-10-27 16:06:43,422: 	      Input data: workflow=161027_210535%3Aclint_crab_JetTagging-QCDPt470To600&
+DEBUG 2016-10-27 16:06:43,422: 	      Request headers: {'Content-Length': '746', 'X-Error-Http': '500', 'X-Rest-Time': '4256343.126 us', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Detail': 'Execution error', 'CMS-Server-Time': 'D=4288844 t=1477602399077278', 'X-Rest-Status': '403', 'Date': 'Thu, 27 Oct 2016 21:06:39 GMT', 'Content-Type': 'text/html;charset=utf-8', 'X-Error-Info': 'You cannot kill a task if it is in the QUEUED state', 'X-Error-Id': '65bb5ed3156e536e0e46732164ae4f5a'}
+ERROR 2016-10-27 16:06:43,422: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 148, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 27, in __call__
+    dictresult, status, reason = server.delete(self.uri, data = urlencode(inputs) + '&' + urlencode(self.jobids))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 97, in delete
+    return self.makeRequest(uri = uri, data = data, verb = 'DELETE')
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 128, in makeRequest
+    capath=caCertPath)#, verbose=True)# for debug
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/WMCore/Services/pycurl_manager.py", line 209, in request
+    raise exc
+HTTPException: url=https://cmsweb.cern.ch/crabserver/prod/workflow, code=500, reason=Internal Server Error, headers={'Content-Length': '746', 'X-Error-Http': '500', 'X-Rest-Time': '4256343.126 us', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Detail': 'Execution error', 'CMS-Server-Time': 'D=4288844 t=1477602399077278', 'X-Rest-Status': '403', 'Date': 'Thu, 27 Oct 2016 21:06:39 GMT', 'Content-Type': 'text/html;charset=utf-8', 'X-Error-Info': 'You cannot kill a task if it is in the QUEUED state', 'X-Error-Id': '65bb5ed3156e536e0e46732164ae4f5a'}
+INFO 2016-10-27 16:06:43,457: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log
+DEBUG 2016-10-27 16:09:05,720: 	 Executing command: 'kill'
+DEBUG 2016-10-27 16:09:05,721: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:09:05,729: 	 Checking credentials
+DEBUG 2016-10-27 16:09:05,729: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:09:05,729: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:09:05,832: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86073
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:05,935: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86073
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:05,935: 	 Proxy valid for 23:54:33 hours
+DEBUG 2016-10-27 16:09:06,045: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:06,045: 	 Checking credentials
+DEBUG 2016-10-27 16:09:06,045: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:09:06,045: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:09:06,148: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 86072
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:06,250: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 86072
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:06,250: 	 Proxy valid for 23:54:32 hours
+DEBUG 2016-10-27 16:09:07,249: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:09:07,354: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:07,355: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:09:07,355: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:09:08,459: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 670:00:11  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:09:08,460: 	 Myproxy is valid: 2412011
+DEBUG 2016-10-27 16:09:08,460: 	 Command use: kill
+DEBUG 2016-10-27 16:09:08,460: 	 Options use: ['-d', 'crab_projects/crab_JetTagging-QCDPt470To600/']
+DEBUG 2016-10-27 16:09:09,357: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:09:09,357: 	 Instance is prod
+DEBUG 2016-10-27 16:09:09,357: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:09:09,357: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:09:09,357: 	 Killing task 161027_210535:clint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:09:14,771: 	 The server answered with an error.
+INFO 2016-10-27 16:09:14,771: 	 Server answered with: Execution error
+INFO 2016-10-27 16:09:14,771: 	 Reason is: There are no jobs to kill. Only jobs not in ['finished'] states can be killed
+INFO 2016-10-27 16:09:14,771: 	 Error Id: 60d93ef5a2012bf440f2b8e5408ef115
+DEBUG 2016-10-27 16:09:14,771: 	 ERROR: Internal Server Error (500):  '<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>500 Internal Server Error</title>
+    <style type="text/css">
+    #powered_by {
+        margin-top: 20px;
+        border-top: 2px solid black;
+        font-style: italic;
+    }
+
+    #traceback {
+        color: red;
+    }
+    </style>
+</head>
+    <body>
+        <h2>500 Internal Server Error</h2>
+        <p>Execution error</p>
+        <pre id="traceback"></pre>
+    <div id="powered_by">
+      <span>
+        Powered by <a href="http://www.cherrypy.org">CherryPy unknown</a>
+      </span>
+    </div>
+    </body>
+</html>
+'
+DEBUG 2016-10-27 16:09:14,771: 	 Command failed with URI: https://cmsweb.cern.ch/crabserver/prod/workflow
+DEBUG 2016-10-27 16:09:14,771: 	      Input data: workflow=161027_210535%3Aclint_crab_JetTagging-QCDPt470To600&
+DEBUG 2016-10-27 16:09:14,771: 	      Request headers: {'Content-Length': '746', 'X-Error-Http': '500', 'X-Rest-Time': '4516772.985 us', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Detail': 'Execution error', 'CMS-Server-Time': 'D=4552641 t=1477602550160409', 'X-Rest-Status': '403', 'Date': 'Thu, 27 Oct 2016 21:09:10 GMT', 'Content-Type': 'text/html;charset=utf-8', 'X-Error-Info': "There are no jobs to kill. Only jobs not in ['finished'] states can be killed", 'X-Error-Id': '60d93ef5a2012bf440f2b8e5408ef115'}
+ERROR 2016-10-27 16:09:14,771: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 148, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 27, in __call__
+    dictresult, status, reason = server.delete(self.uri, data = urlencode(inputs) + '&' + urlencode(self.jobids))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 97, in delete
+    return self.makeRequest(uri = uri, data = data, verb = 'DELETE')
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 128, in makeRequest
+    capath=caCertPath)#, verbose=True)# for debug
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/WMCore/Services/pycurl_manager.py", line 209, in request
+    raise exc
+HTTPException: url=https://cmsweb.cern.ch/crabserver/prod/workflow, code=500, reason=Internal Server Error, headers={'Content-Length': '746', 'X-Error-Http': '500', 'X-Rest-Time': '4516772.985 us', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Detail': 'Execution error', 'CMS-Server-Time': 'D=4552641 t=1477602550160409', 'X-Rest-Status': '403', 'Date': 'Thu, 27 Oct 2016 21:09:10 GMT', 'Content-Type': 'text/html;charset=utf-8', 'X-Error-Info': "There are no jobs to kill. Only jobs not in ['finished'] states can be killed", 'X-Error-Id': '60d93ef5a2012bf440f2b8e5408ef115'}
+INFO 2016-10-27 16:09:14,775: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log
+DEBUG 2016-10-27 16:35:06,170: 	 Executing command: 'status'
+DEBUG 2016-10-27 16:35:06,171: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:35:06,177: 	 Checking credentials
+DEBUG 2016-10-27 16:35:06,178: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:35:06,178: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:35:06,280: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 84512
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:06,382: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 84512
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:06,382: 	 Proxy valid for 23:28:32 hours
+DEBUG 2016-10-27 16:35:06,492: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:06,492: 	 Checking credentials
+DEBUG 2016-10-27 16:35:06,492: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:35:06,492: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:35:06,595: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 84512
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:06,697: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 84512
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:06,697: 	 Proxy valid for 23:28:32 hours
+DEBUG 2016-10-27 16:35:07,589: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:35:07,694: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:07,694: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:35:07,694: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:35:08,798: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 669:34:11  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:08,799: 	 Myproxy is valid: 2410451
+DEBUG 2016-10-27 16:35:08,799: 	 Command use: status
+DEBUG 2016-10-27 16:35:08,799: 	 Options use: ['-d', 'crab_projects/crab_JetTagging-QCDPt470To600/']
+DEBUG 2016-10-27 16:35:09,711: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:35:09,711: 	 Instance is prod
+DEBUG 2016-10-27 16:35:09,711: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:35:09,711: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:35:09,712: 	 Looking up detailed status of task 161027_210535:clint_crab_JetTagging-QCDPt470To600
+DEBUG 2016-10-27 16:35:17,017: 	 {'status': 'SUBMITTED', 'username': 'clint', 'jobsPerStatus': {'idle': 285, 'running': 65}, 'jobs': {'344': {'State': 'idle'}, '345': {'State': 'idle'}, '346': {'State': 'idle'}, '347': {'State': 'idle'}, '340': {'State': 'idle'}, '341': {'State': 'idle'}, '342': {'State': 'idle'}, '343': {'State': 'idle'}, '348': {'State': 'idle'}, '349': {'State': 'idle'}, '298': {'State': 'idle'}, '299': {'State': 'idle'}, '296': {'State': 'idle'}, '297': {'State': 'idle'}, '294': {'State': 'idle'}, '295': {'State': 'idle'}, '292': {'State': 'idle'}, '293': {'State': 'idle'}, '290': {'State': 'idle'}, '291': {'State': 'idle'}, '199': {'State': 'idle'}, '198': {'State': 'idle'}, '195': {'State': 'idle'}, '194': {'State': 'idle'}, '197': {'State': 'idle'}, '196': {'State': 'idle'}, '191': {'State': 'idle'}, '190': {'State': 'idle'}, '193': {'State': 'idle'}, '192': {'State': 'idle'}, '270': {'State': 'idle'}, '271': {'State': 'idle'}, '272': {'State': 'idle'}, '273': {'State': 'idle'}, '274': {'State': 'idle'}, '275': {'State': 'idle'}, '276': {'State': 'idle'}, '277': {'State': 'idle'}, '278': {'State': 'idle'}, '279': {'State': 'idle'}, '108': {'State': 'running'}, '109': {'State': 'running'}, '102': {'State': 'idle'}, '103': {'State': 'idle'}, '100': {'State': 'idle'}, '101': {'State': 'idle'}, '106': {'State': 'running'}, '107': {'State': 'running'}, '104': {'State': 'idle'}, '105': {'State': 'idle'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '339': {'State': 'idle'}, '338': {'State': 'idle'}, '335': {'State': 'idle'}, '334': {'State': 'idle'}, '337': {'State': 'idle'}, '336': {'State': 'idle'}, '331': {'State': 'idle'}, '330': {'State': 'idle'}, '333': {'State': 'idle'}, '332': {'State': 'idle'}, '6': {'State': 'running'}, '99': {'State': 'idle'}, '98': {'State': 'running'}, '91': {'State': 'idle'}, '90': {'State': 'idle'}, '93': {'State': 'idle'}, '92': {'State': 'idle'}, '95': {'State': 'running'}, '94': {'State': 'idle'}, '97': {'State': 'running'}, '96': {'State': 'running'}, '238': {'State': 'idle'}, '239': {'State': 'idle'}, '234': {'State': 'idle'}, '235': {'State': 'idle'}, '236': {'State': 'idle'}, '237': {'State': 'idle'}, '230': {'State': 'idle'}, '231': {'State': 'idle'}, '232': {'State': 'idle'}, '233': {'State': 'idle'}, '1': {'State': 'running'}, '146': {'State': 'idle'}, '147': {'State': 'idle'}, '144': {'State': 'idle'}, '145': {'State': 'idle'}, '142': {'State': 'idle'}, '143': {'State': 'idle'}, '140': {'State': 'idle'}, '141': {'State': 'idle'}, '148': {'State': 'idle'}, '149': {'State': 'idle'}, '133': {'State': 'idle'}, '132': {'State': 'idle'}, '131': {'State': 'idle'}, '130': {'State': 'idle'}, '137': {'State': 'idle'}, '136': {'State': 'idle'}, '135': {'State': 'idle'}, '134': {'State': 'idle'}, '139': {'State': 'idle'}, '138': {'State': 'idle'}, '24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'idle'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '88': {'State': 'idle'}, '89': {'State': 'idle'}, '82': {'State': 'idle'}, '181': {'State': 'idle'}, '80': {'State': 'idle'}, '81': {'State': 'idle'}, '86': {'State': 'idle'}, '87': {'State': 'idle'}, '84': {'State': 'idle'}, '85': {'State': 'idle'}, '7': {'State': 'running'}, '245': {'State': 'idle'}, '244': {'State': 'idle'}, '247': {'State': 'idle'}, '246': {'State': 'idle'}, '241': {'State': 'idle'}, '240': {'State': 'idle'}, '243': {'State': 'idle'}, '242': {'State': 'idle'}, '249': {'State': 'idle'}, '248': {'State': 'idle'}, '179': {'State': 'idle'}, '178': {'State': 'idle'}, '177': {'State': 'idle'}, '176': {'State': 'idle'}, '175': {'State': 'idle'}, '174': {'State': 'idle'}, '173': {'State': 'idle'}, '172': {'State': 'idle'}, '171': {'State': 'idle'}, '170': {'State': 'idle'}, '182': {'State': 'idle'}, '183': {'State': 'idle'}, '180': {'State': 'idle'}, '2': {'State': 'idle'}, '186': {'State': 'idle'}, '187': {'State': 'idle'}, '184': {'State': 'idle'}, '185': {'State': 'idle'}, '188': {'State': 'idle'}, '189': {'State': 'idle'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '62': {'State': 'idle'}, '322': {'State': 'idle'}, '323': {'State': 'idle'}, '320': {'State': 'idle'}, '321': {'State': 'idle'}, '326': {'State': 'idle'}, '327': {'State': 'idle'}, '324': {'State': 'idle'}, '325': {'State': 'idle'}, '328': {'State': 'idle'}, '329': {'State': 'idle'}, '201': {'State': 'idle'}, '200': {'State': 'idle'}, '203': {'State': 'idle'}, '202': {'State': 'idle'}, '205': {'State': 'idle'}, '204': {'State': 'idle'}, '207': {'State': 'idle'}, '206': {'State': 'idle'}, '209': {'State': 'idle'}, '208': {'State': 'idle'}, '77': {'State': 'idle'}, '76': {'State': 'idle'}, '75': {'State': 'idle'}, '74': {'State': 'idle'}, '73': {'State': 'idle'}, '72': {'State': 'idle'}, '71': {'State': 'idle'}, '70': {'State': 'idle'}, '79': {'State': 'idle'}, '78': {'State': 'idle'}, '8': {'State': 'running'}, '120': {'State': 'idle'}, '121': {'State': 'idle'}, '122': {'State': 'idle'}, '123': {'State': 'idle'}, '124': {'State': 'idle'}, '125': {'State': 'idle'}, '126': {'State': 'idle'}, '127': {'State': 'idle'}, '128': {'State': 'idle'}, '129': {'State': 'idle'}, '319': {'State': 'idle'}, '318': {'State': 'idle'}, '313': {'State': 'idle'}, '312': {'State': 'idle'}, '311': {'State': 'idle'}, '310': {'State': 'idle'}, '317': {'State': 'idle'}, '316': {'State': 'idle'}, '315': {'State': 'idle'}, '314': {'State': 'idle'}, '3': {'State': 'idle'}, '252': {'State': 'idle'}, '60': {'State': 'running'}, '61': {'State': 'idle'}, '258': {'State': 'idle'}, '63': {'State': 'idle'}, '64': {'State': 'idle'}, '65': {'State': 'running'}, '66': {'State': 'idle'}, '67': {'State': 'idle'}, '68': {'State': 'idle'}, '69': {'State': 'idle'}, '250': {'State': 'idle'}, '251': {'State': 'idle'}, '256': {'State': 'idle'}, '257': {'State': 'idle'}, '254': {'State': 'idle'}, '255': {'State': 'idle'}, '168': {'State': 'idle'}, '169': {'State': 'idle'}, '164': {'State': 'idle'}, '165': {'State': 'idle'}, '166': {'State': 'idle'}, '167': {'State': 'idle'}, '160': {'State': 'idle'}, '161': {'State': 'idle'}, '162': {'State': 'idle'}, '163': {'State': 'idle'}, '9': {'State': 'running'}, '350': {'State': 'idle'}, '216': {'State': 'idle'}, '217': {'State': 'idle'}, '214': {'State': 'idle'}, '215': {'State': 'idle'}, '212': {'State': 'idle'}, '213': {'State': 'idle'}, '210': {'State': 'idle'}, '211': {'State': 'idle'}, '218': {'State': 'idle'}, '219': {'State': 'idle'}, '289': {'State': 'idle'}, '288': {'State': 'idle'}, '4': {'State': 'idle'}, '281': {'State': 'idle'}, '280': {'State': 'idle'}, '283': {'State': 'idle'}, '282': {'State': 'idle'}, '285': {'State': 'idle'}, '284': {'State': 'idle'}, '287': {'State': 'idle'}, '286': {'State': 'idle'}, '263': {'State': 'idle'}, '262': {'State': 'idle'}, '261': {'State': 'idle'}, '260': {'State': 'idle'}, '267': {'State': 'idle'}, '266': {'State': 'idle'}, '265': {'State': 'idle'}, '264': {'State': 'idle'}, '269': {'State': 'idle'}, '268': {'State': 'idle'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'idle'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '259': {'State': 'idle'}, '115': {'State': 'idle'}, '114': {'State': 'idle'}, '117': {'State': 'idle'}, '116': {'State': 'idle'}, '111': {'State': 'running'}, '110': {'State': 'running'}, '113': {'State': 'idle'}, '253': {'State': 'idle'}, '119': {'State': 'idle'}, '118': {'State': 'idle'}, '308': {'State': 'idle'}, '309': {'State': 'idle'}, '300': {'State': 'idle'}, '301': {'State': 'idle'}, '302': {'State': 'idle'}, '303': {'State': 'idle'}, '304': {'State': 'idle'}, '305': {'State': 'idle'}, '306': {'State': 'idle'}, '307': {'State': 'idle'}, '229': {'State': 'idle'}, '228': {'State': 'idle'}, '227': {'State': 'idle'}, '226': {'State': 'idle'}, '225': {'State': 'idle'}, '224': {'State': 'idle'}, '223': {'State': 'idle'}, '222': {'State': 'idle'}, '221': {'State': 'idle'}, '220': {'State': 'idle'}, '151': {'State': 'idle'}, '150': {'State': 'idle'}, '153': {'State': 'idle'}, '152': {'State': 'idle'}, '155': {'State': 'idle'}, '154': {'State': 'idle'}, '157': {'State': 'idle'}, '156': {'State': 'idle'}, '159': {'State': 'idle'}, '158': {'State': 'idle'}, '112': {'State': 'idle'}, '83': {'State': 'idle'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '5': {'State': 'idle'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-1.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1477602336, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['idle', 344], ['idle', 345], ['idle', 346], ['idle', 347], ['idle', 340], ['idle', 341], ['idle', 342], ['idle', 343], ['idle', 348], ['idle', 349], ['idle', 298], ['idle', 299], ['idle', 296], ['idle', 297], ['idle', 294], ['idle', 295], ['idle', 292], ['idle', 293], ['idle', 290], ['idle', 291], ['idle', 199], ['idle', 198], ['idle', 195], ['idle', 194], ['idle', 197], ['idle', 196], ['idle', 191], ['idle', 190], ['idle', 193], ['idle', 192], ['idle', 270], ['idle', 271], ['idle', 272], ['idle', 273], ['idle', 274], ['idle', 275], ['idle', 276], ['idle', 277], ['idle', 278], ['idle', 279], ['running', 108], ['running', 109], ['idle', 102], ['idle', 103], ['idle', 100], ['idle', 101], ['running', 106], ['running', 107], ['idle', 104], ['idle', 105], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['idle', 339], ['idle', 338], ['idle', 335], ['idle', 334], ['idle', 337], ['idle', 336], ['idle', 331], ['idle', 330], ['idle', 333], ['idle', 332], ['running', 6], ['idle', 99], ['running', 98], ['idle', 91], ['idle', 90], ['idle', 93], ['idle', 92], ['running', 95], ['idle', 94], ['running', 97], ['running', 96], ['idle', 238], ['idle', 239], ['idle', 234], ['idle', 235], ['idle', 236], ['idle', 237], ['idle', 230], ['idle', 231], ['idle', 232], ['idle', 233], ['running', 1], ['idle', 146], ['idle', 147], ['idle', 144], ['idle', 145], ['idle', 142], ['idle', 143], ['idle', 140], ['idle', 141], ['idle', 148], ['idle', 149], ['idle', 133], ['idle', 132], ['idle', 131], ['idle', 130], ['idle', 137], ['idle', 136], ['idle', 135], ['idle', 134], ['idle', 139], ['idle', 138], ['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['idle', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['idle', 88], ['idle', 89], ['idle', 82], ['idle', 83], ['idle', 80], ['idle', 81], ['idle', 86], ['idle', 87], ['idle', 84], ['idle', 85], ['running', 7], ['idle', 245], ['idle', 244], ['idle', 247], ['idle', 246], ['idle', 241], ['idle', 240], ['idle', 243], ['idle', 242], ['idle', 249], ['idle', 248], ['idle', 179], ['idle', 178], ['idle', 177], ['idle', 176], ['idle', 175], ['idle', 174], ['idle', 173], ['idle', 172], ['idle', 171], ['idle', 170], ['idle', 253], ['idle', 182], ['idle', 183], ['idle', 180], ['idle', 181], ['idle', 186], ['idle', 187], ['idle', 184], ['idle', 185], ['idle', 188], ['idle', 189], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['idle', 62], ['idle', 322], ['idle', 323], ['idle', 320], ['idle', 321], ['idle', 326], ['idle', 327], ['idle', 324], ['idle', 325], ['idle', 328], ['idle', 329], ['idle', 201], ['idle', 200], ['idle', 203], ['idle', 202], ['idle', 205], ['idle', 204], ['idle', 207], ['idle', 206], ['idle', 209], ['idle', 208], ['idle', 77], ['idle', 76], ['idle', 75], ['idle', 74], ['idle', 73], ['idle', 72], ['idle', 71], ['idle', 70], ['idle', 79], ['idle', 78], ['idle', 2], ['running', 8], ['idle', 68], ['idle', 120], ['idle', 121], ['idle', 122], ['idle', 123], ['idle', 124], ['idle', 125], ['idle', 126], ['idle', 127], ['idle', 128], ['idle', 129], ['idle', 319], ['idle', 318], ['idle', 313], ['idle', 312], ['idle', 311], ['idle', 310], ['idle', 317], ['idle', 316], ['idle', 315], ['idle', 314], ['idle', 3], ['running', 60], ['idle', 61], ['idle', 258], ['idle', 259], ['idle', 64], ['running', 65], ['idle', 66], ['idle', 67], ['idle', 252], ['idle', 69], ['idle', 250], ['idle', 251], ['idle', 256], ['idle', 257], ['idle', 254], ['idle', 255], ['idle', 168], ['idle', 169], ['idle', 164], ['idle', 165], ['idle', 166], ['idle', 167], ['idle', 160], ['idle', 161], ['idle', 162], ['idle', 163], ['running', 9], ['idle', 350], ['idle', 216], ['idle', 217], ['idle', 214], ['idle', 215], ['idle', 212], ['idle', 213], ['idle', 210], ['idle', 211], ['idle', 218], ['idle', 219], ['idle', 289], ['idle', 288], ['idle', 4], ['idle', 281], ['idle', 280], ['idle', 283], ['idle', 282], ['idle', 285], ['idle', 284], ['idle', 287], ['idle', 286], ['idle', 263], ['idle', 262], ['idle', 261], ['idle', 260], ['idle', 267], ['idle', 266], ['idle', 265], ['idle', 264], ['idle', 269], ['idle', 268], ['running', 59], ['running', 58], ['idle', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['idle', 63], ['idle', 115], ['idle', 114], ['idle', 117], ['idle', 116], ['running', 111], ['running', 110], ['idle', 113], ['idle', 112], ['idle', 119], ['idle', 118], ['idle', 308], ['idle', 309], ['idle', 300], ['idle', 301], ['idle', 302], ['idle', 303], ['idle', 304], ['idle', 305], ['idle', 306], ['idle', 307], ['idle', 229], ['idle', 228], ['idle', 227], ['idle', 226], ['idle', 225], ['idle', 224], ['idle', 223], ['idle', 222], ['idle', 221], ['idle', 220], ['idle', 151], ['idle', 150], ['idle', 153], ['idle', 152], ['idle', 155], ['idle', 154], ['idle', 157], ['idle', 156], ['idle', 159], ['idle', 158], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['idle', 5]]}
+INFO 2016-10-27 16:35:17,017: 	 CRAB project directory:		/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:35:17,017: 	 Task name:			161027_210535:clint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:35:17,017: 	 Grid scheduler:			crab3@submit-1.t2.ucsd.edu
+INFO 2016-10-27 16:35:17,018: 	 Task status:			SUBMITTED
+INFO 2016-10-27 16:35:17,018: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=clint&table=Mains&pattern=161027_210535%3Aclint_crab_JetTagging-QCDPt470To600
+INFO 2016-10-27 16:35:17,018: 	 
+Jobs status:			idle           81.4% (285/350)
+INFO 2016-10-27 16:35:17,018: 	 				running        18.6% ( 65/350)
+INFO 2016-10-27 16:35:17,018: 	 
+No publication information available yet
+INFO 2016-10-27 16:35:17,021: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log
+DEBUG 2016-10-27 16:35:24,504: 	 Executing command: 'kill'
+DEBUG 2016-10-27 16:35:24,504: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-27 16:35:24,509: 	 Checking credentials
+DEBUG 2016-10-27 16:35:24,509: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:35:24,509: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:35:24,611: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 84494
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:24,713: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 84494
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:24,714: 	 Proxy valid for 23:28:14 hours
+DEBUG 2016-10-27 16:35:24,822: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:24,822: 	 Checking credentials
+DEBUG 2016-10-27 16:35:24,823: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-27 16:35:24,823: 	 Getting proxy life time left
+DEBUG 2016-10-27 16:35:24,924: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 84494
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:25,027: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 84494
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:25,027: 	 Proxy valid for 23:28:14 hours
+DEBUG 2016-10-27 16:35:25,951: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-27 16:35:26,056: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:26,056: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-27 16:35:26,056: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson_cmsweb.cern.ch for credential name
+DEBUG 2016-10-27 16:35:27,160: 	 Executing : 
+ command : myproxy-info -l fb146d09c791188c7ffcd8d5092b1e2603361df9 -s myproxy.cern.ch
+ output : username: fb146d09c791188c7ffcd8d5092b1e2603361df9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=clint/CN=743396/CN=Clint Allan Richardson
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 669:33:52  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-27 16:35:27,160: 	 Myproxy is valid: 2410432
+DEBUG 2016-10-27 16:35:27,160: 	 Command use: kill
+DEBUG 2016-10-27 16:35:27,160: 	 Options use: ['-d', 'crab_projects/crab_JetTagging-QCDPt470To600/']
+DEBUG 2016-10-27 16:35:28,064: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-27 16:35:28,064: 	 Instance is prod
+DEBUG 2016-10-27 16:35:28,064: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-27 16:35:28,064: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-27 16:35:28,064: 	 Killing task 161027_210535:clint_crab_JetTagging-QCDPt470To600
+DEBUG 2016-10-27 16:35:36,720: 	 Result: {'result': [{'result': 'ok'}], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_asodb', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time']}}
+INFO 2016-10-27 16:35:36,720: 	 Kill request successfully sent
+INFO 2016-10-27 16:35:36,722: 	 Log file is /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCDPt470To600/crab.log

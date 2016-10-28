@@ -1,0 +1,150 @@
+DEBUG 2016-10-25 14:08:47,716: 	 Executing command: 'submit'
+DEBUG 2016-10-25 14:08:47,717: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-25 14:08:47,729: 	 Checking credentials
+DEBUG 2016-10-25 14:08:47,729: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-25 14:08:47,729: 	 Getting proxy life time left
+DEBUG 2016-10-25 14:08:47,832: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 36304
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:08:47,935: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 36304
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:08:47,935: 	 Proxy valid for 10:05:04 hours
+INFO 2016-10-25 14:08:47,935: 	 Will use CRAB configuration file JetInfo_TTbar_cfg.py
+DEBUG 2016-10-25 14:08:47,936: 	 Loading CRAB configuration file.
+ERROR 2016-10-25 14:08:47,994: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/JetInfo_TTbar_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2016-10-25 14:08:47,994: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 298, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 84, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/JetInfo_TTbar_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2016-10-25 14:16:50,775: 	 Executing command: 'submit'
+DEBUG 2016-10-25 14:16:50,776: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-25 14:16:50,782: 	 Checking credentials
+DEBUG 2016-10-25 14:16:50,782: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-25 14:16:50,782: 	 Getting proxy life time left
+DEBUG 2016-10-25 14:16:50,885: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 35821
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:16:50,988: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 35821
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:16:50,988: 	 Proxy valid for 09:57:01 hours
+INFO 2016-10-25 14:16:50,988: 	 Will use CRAB configuration file crab_ttbar-Wtagging.py
+DEBUG 2016-10-25 14:16:50,988: 	 Loading CRAB configuration file.
+DEBUG 2016-10-25 14:16:52,731: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2016-10-25 14:16:52,731: 	 Working area '/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-TTbar-WJets' already exists 
+Please change the requestName in the config file
+ERROR 2016-10-25 14:16:52,732: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 302, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 394, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-TTbar-WJets' already exists 
+Please change the requestName in the config file
+DEBUG 2016-10-25 14:23:04,682: 	 Executing command: 'submit'
+DEBUG 2016-10-25 14:23:04,683: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-25 14:23:04,690: 	 Checking credentials
+DEBUG 2016-10-25 14:23:04,690: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-25 14:23:04,690: 	 Getting proxy life time left
+DEBUG 2016-10-25 14:23:04,793: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 35447
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:23:04,896: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 35447
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-25 14:23:04,896: 	 Proxy valid for 09:50:47 hours
+INFO 2016-10-25 14:23:04,896: 	 Will use CRAB configuration file crab_qcdPt300To470.py
+DEBUG 2016-10-25 14:23:04,896: 	 Loading CRAB configuration file.
+DEBUG 2016-10-25 14:23:06,660: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2016-10-25 14:23:06,661: 	 Working area '/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCD' already exists 
+Please change the requestName in the config file
+ERROR 2016-10-25 14:23:06,661: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 302, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 394, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-QCD' already exists 
+Please change the requestName in the config file
+DEBUG 2016-10-26 14:11:14,807: 	 Executing command: 'kill'
+DEBUG 2016-10-26 14:11:14,808: 	 Found CRAB cache file /uscms/home/clint/.crab3
+DEBUG 2016-10-26 14:11:14,818: 	 Checking credentials
+DEBUG 2016-10-26 14:11:14,818: 	 Found proxy file /tmp/x509up_u47334
+DEBUG 2016-10-26 14:11:14,818: 	 Getting proxy life time left
+DEBUG 2016-10-26 14:11:14,921: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -timeleft
+ output : 85935
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-26 14:11:15,025: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47334 -actimeleft
+ output : 85935
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-26 14:11:15,025: 	 Proxy valid for 23:52:15 hours
+ERROR 2016-10-26 14:11:15,026: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-TTbar-WJets
+ERROR 2016-10-26 14:11:15,026: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/clint/using_git/JetTagging/CMSSW_8_0_14/src/JetInfo/JetConstAnalyzer/python/crab/crab_projects/crab_JetTagging-TTbar-WJets
