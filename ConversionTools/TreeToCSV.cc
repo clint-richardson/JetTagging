@@ -9,10 +9,10 @@ void TreeToCSV(){
 
   //make output file
   std::ofstream outfile;
-  outfile.open("JetInfo_cc.csv");
+  outfile.open("JetInfo_TopJets.csv");
 
   TFile* f = new TFile("JetInfo-TopJets.root");
-  TTree* t = (TTree*) f->Get("demo/JetVariables");
+  TTree* t = (TTree*) f->Get("JetInfo/JetVariables");
   //load data
   std::vector<float>* jetPt =0;
   TBranch* b_jetpt;
@@ -54,9 +54,12 @@ void TreeToCSV(){
 
   
   int nEntries = t->GetEntries();
-  for(int i =0; i< nEntries; i++){
+  for(int i =0; i< 13000; i++){
+    if(i%1000==0) std::cout<<"Completed "<<i<<" out of "<<nEntries<<" entries"<<std::endl;
     t->GetEntry(i);
     std::stringstream line;
+    //add signal bit
+    line<<"1,";
     TH2F* h = new TH2F("h","h",20,-1,1,20,-1,1);
     for(int j =0 ; j<(*nConst)[0];j++){
       float pt = (*constPt)[j];

@@ -5,11 +5,11 @@
 #include <vector>
 
 
-void TreeToCSV(){
+void TreeToCSV_qcd(){
 
   //make output file
   std::ofstream outfile;
-  outfile.open("JetInfo_cc.csv");
+  outfile.open("JetInfo_qcd.csv");
 
   TFile* f = new TFile("JetInfo-QCD.root");
   TTree* t = (TTree*) f->Get("JetInfo/JetVariables");
@@ -54,8 +54,9 @@ void TreeToCSV(){
 
   
   int nEntries = t->GetEntries();
-  for(int i =0; i< nEntries; i++){
+  for(int i =0; i< 20000; i++){
     t->GetEntry(i);
+    if(i%1000==0) std::cout<<"Completed "<<i<<" out of "<<nEntries<<" entries"<<std::endl;
     std::stringstream line;
     //add background bit
     line<<"0,";
